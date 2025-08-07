@@ -1,59 +1,100 @@
-# CurrencyConverter
+# 💱 Angular Currency Converter
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.8.
+A sleek and accurate currency converter built using **Angular 19**, **SCSS**, and a **service-driven architecture**. It uses live exchange rates powered by the [ExchangeRatesAPI.io](https://exchangeratesapi.io) to perform real-time conversions between popular currencies.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🌐 Live Demo
+
+👉 [Click here to use the app](https://ahmad-889.github.io/currency-converter/)
+
+---
+
+## 🎯 What I Built
+
+This application is structured into modular components with clean separation between UI and business logic. Here’s what I built:
+
+* ✅ `CurrencyConverterComponent`: The core UI for selecting currencies and entering amounts  
+* ✅ `CurrencyConverterService`: Fetches live exchange rates and performs conversion logic  
+* ✅ Custom flag display for each currency using emoji and code  
+
+All logic is separated cleanly, ensuring the app is easy to extend and maintain.
+
+---
+
+## 💡 Key Features
+
+* Convert between major currencies like `USD`, `EUR`, `GBP`, `PKR`, `INR`, `JPY`
+* Live exchange rates fetched from **ExchangeRatesAPI**
+* Flag icons next to each currency in the dropdown
+* Clean, responsive **glassmorphism** UI using SCSS
+* Handles identical currency conversion gracefully
+* Error-safe logic and fallback handling for missing API values
+
+---
+
+## 🧱 Technologies Used
+
+* Angular 19 (Standalone Components)
+* TypeScript
+* SCSS
+* RxJS + Angular HTTPClient
+* REST API integration (ExchangeRatesAPI)
+* Template-driven forms (`ngModel`)
+
+---
+
+## 📸 Screenshot
+
+![Currency Converter UI](public/screenshot.png)
+
+---
+
+## 📁 Project Structure
+
+
+```
+src/
+└── app/
+├── components/
+│ └── currency-converter/
+│ ├── currency-converter.component.ts   # Component logic
+│ ├── currency-converter.component.html # UI template
+│ └── currency-converter.component.scss # Glassmorphism styling
+└── services/
+└── currency-converter.service.ts       # API + conversion logic
+```
+
+---
+
+
+## ⚙️ API Used
+
+**[ExchangeRatesAPI.io](https://exchangeratesapi.io)**  
+Live exchange rates accessed via this endpoint:
+
+---
+
+
+## 🚀 Running the Project
+
+Install Angular CLI if you haven't:
 
 ```bash
+npm install -g @angular/cli
+```
+
+Install dependencies and serve:
+
+```bash
+npm install
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Visit `http://localhost:4200` to see the custom directives in action.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 🔗 Author
+Made with ❤️ by
+Muhammad Ahmad
