@@ -6,7 +6,7 @@ import { map, Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class CurrencyConverterService {
-  private apiUrl = 'http://api.exchangeratesapi.io/v1/latest';
+  private apiUrl = 'https://api.exchangeratesapi.io/v1/latest';
   private accessKey = '9573ca6a8648299082d586bac301d243';
   private supportedCurrencies = ['USD', 'EUR', 'PKR', 'GBP', 'INR', 'JPY'];
 
